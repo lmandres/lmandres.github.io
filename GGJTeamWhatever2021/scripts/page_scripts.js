@@ -1,12 +1,13 @@
 
 let radius = 20;
-let myLocation = document.getElementById("location");
+let myLocation;
 
 let local_data;
 
 function getLocation(site_data) {
 
     local_data = site_data;
+    myLocation = document.getElementById("location");
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
