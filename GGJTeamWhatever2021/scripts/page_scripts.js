@@ -1,8 +1,13 @@
 
 let radius = 20;
-let myLocation = document.getElementById("mylocation");
+let myLocation = document.getElementById("location");
 
-function getLocation() {
+let local_data;
+
+function getLocation(site_data) {
+
+    local_data = site_data;
+
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
     } else {
@@ -13,6 +18,8 @@ function getLocation() {
 function showPosition(position) {
 
     let distance = GreatCircle.distance(40.26392, -76.88929, position.coords.latitude, position.coords.longitude, "FT");
+
+    console.log(local_data);
 
     if (distance < radius) {
         myLocation.innerHTML = "<a href=\"ymca.html\">Click Here</a>.";

@@ -11,9 +11,12 @@
         <script type="text/javascript" language="javascript" src="./scripts/page_scripts.js"></script>
     </head>
 
-    <body onload="console.log(site_data);">
+    <body>
         <h2 id="name">name</h2>
-        <p>My Location: <span id="location"></span></p>
+        <p>
+            My Location: <span id="location"></span><br />
+            <button onclick="getLocation(site_data);">Check In</button>
+        </p>
         <p id="description">description</p>
         <p id="hint">hint</p>
         <div id="next"></div>
