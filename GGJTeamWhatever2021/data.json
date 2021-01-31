@@ -1,100 +1,64 @@
 {
     "sites": [
         { 
-            "site_name": "Capitol Steps",
+            "site_name": "Outside of Fence",
             "coordinates": {
-                "latitude": 40.26401,
-                "longitude": -76.88480
+                "latitude": 39.35757,
+                "longitude": -76.55412
             },
                         
-            "description":  "When you get to the steps of the Capitol, you find a notebook. The notebook old and as you flip through the pages, you recognize Mason's handwriting. On the inside of the back cover you find something scribbled by Mason, but it is sloppy and looks like it was written in a hurry:",
-            "hint": "If you're reading this, go to the church that's also a holiday",
-            "next": "St. Patrick Cathedral"
-
+            "description":  "You were on your way to get the mail and went out to the mailbox.  As you were opening your mail, you noticed that your dog got out of the fence.  This is terrible!!!  You scream, \"I don't want to lose my dog!\"  You then run off after it.  Where though?",
+            "hint": "If you're reading this, go to the end of the block"
         },
         { 
-            "site_name": "St. Patrick Cathedral",
+            "site_name": "Southwest Corner of the Block",
             "coordinates": {
-                "latitude": 40.26368,
-                "longitude": -76.88666
+                "latitude": 39.35519,
+                "longitude": -76.55190
             },
             
-            "description":  "Upon arriving in front of St. Patrick Cathedral you do not see anyone matching Mason's description. Looking around you notice a flyer on a building wall. It is a religious flying that reads \"Are you lost and looking to find your way to salvation?\"  It is filled with the excepted religious info about finding Jesus, but on the back of the flyer, you once again see Mason's handwriting it reads:",
-            "hint": "Young man, there's no need to feel down",
-            "next": "East Shore Branch YMCA"
-
+            "description":  "You saw your dog run towards the southwest corner of the block.  You ran after it.  When it got to the end of the block, your dog just stopped, waiting for you to catch up and wagging its tail.  You scream, \"Do you think this is a game?!?!\"  Actually, yes, your dog thinks it's a game.  Then you watch as you start to catch up to the southwest corner of your block as it starts running across the street again!",
+            "hint": "Go east!"
         },
         { 
-            "site_name": "East Shore Branch YMCA",
+            "site_name": "Southeast Corner of the Block",
             "coordinates": {
-                "latitude": 40.26392,
-                "longitude": -76.88929
+                "latitude": 39.35515,
+                "longitude": -76.55192
             },
             
-            "description":  "The YMCA is old bridge brick building that was build in 1933. It is designed in the Italian Romanesque style and as you can see there have been additions over the years.  Mason is no where to be seen. <br><p>As you look around, someone comes out of the building and approaches you. They are dress in athletic cloths, their face is flush from their work out. They smile as they come to a stop and ask \"Are you looking for Mason? He said to give you this.\"  They reach out with a note.  You take it and open it and read:</p>",
-            "hint": "Go to the 'Never again' monument. Make sure no one follows",
-            "next":  "Holocaust Monument"
-
+            "description":  "As you were about to catch up to your dog, it took off and started running up the street.  You're still running, but for some reason, your dog is in better shape than your are.  Stupid dog.  Anyway, you see your dog start running north.  Where do you go?",
+            "hint": "Go to the north"
         },
         { 
-            "site_name": "Holocaust Monument",
+            "site_name": "Northeast Corner of the Block",
             "coordinates": {
-                "latitude": 40.26840, 
-                "longitude": -76.89332
+                "latitude": 39.35790, 
+                "longitude": -76.54951
             },
             
-            "description":  "The Holocaust Monument is a tribute to remember the structure of iron and stone. It is a reminder of one of the darkest chapters in history and a reminder to \"Never Again\" allow it to happen again. <br><p>At the base of the monument you see a bouquet of flowers. You pick it up and inspect the bundle. The scent fills you nose as you pull out a small card. The card reads:</p>",
-            "hint": "In Midtown, find the gentleman and the Scholar",
-            "next": "Midtown Scholar"
-
+            "description":  "Your dog stopped again, this time at the northeast corner of the block.  This time, it got far ahead of you, and, as if taunting you, it took time out of its day to poop.  So, it pooped, and you're still running.  As you start to get a whiff of the stench that it left behind, it takes off again, this time heading west.",
+            "hint": "Your dog went west"
         },
         { 
-            "site_name": "Midtown Scholar",
+            "site_name": "Northwest Corner of the Block",
             "coordinates": {
-                "latitude": 40.26828, 
-                "longitude": -76.88810
+                "latitude": 39.35849,
+                "longitude": -76.55054 
             },
             
-            "description":  "The marquee is above the doors is ablaze with neon blue and white light. Their is a large gathering of people in the bookstore. People are listening to a man leading a discussion, some are browsing through the stacks, and some are just there to enjoy a cup of coffee.<br><p>As you search around you notice a display of books, one of the books looks like it has a piece of paper sticking out from between it's pages. You flip the book open and take the note, it reads:",
-            "hint": "PA always said that those that COURT with criminal behavior are in SUPREME judgement.",
-            "next": "The Supreme Court of Pennsylvania"
-
+            "description":  "As your dog gets to the northwest corner of the block, you see your neighbor grab it by the collar.  Somewhat relieved, you rush over to take your dog from your neighbor.  You thank your neighbor profusely.  They even offer to pick up the poop that your dog left behind as you were chasing it.  You decide that your neighbor is overly nice, but whatever.  But, where do you go from here?",
+            "hint": "Take your dog home, dummy"
         },
         { 
-            "site_name": "The Supreme Court of Pennsylvania",
+            "site_name": "Home",
             "coordinates": {
-                "latitude": 40.26683, 
-                "longitude": -76.88271
+                "latitude": 39.35757, 
+                "longitude": -76.55412
             },
             
-            "description":  "The Supreme Court of Pennsylvania is the highest court in the Commonwealth and the oldest appellate court in the nation.<br><p>The building is white with a rounded front filled with large windows. Near the side walk, in the flower beds, you find a small wooden box. Inside you find a note that reads:",
-            "hint": "Go to where those that have been RECIPIENTS of the highest HONOR in the land have been MEMORIALized",
-            "next": "Pennsylvania Medal of Honor Recipients Memorial"
-
-        },
-        { 
-            "site_name":"Pennsylvania Medal of Honor Recipients Memorial",
-            "coordinates": {
-                "latitude": 40.26261, 
-                "longitude": -76.88057
-            },
-            
-            "description":  "",
-            "hint": "",
-            "next": "Harrisburg University of Science and Technology"
-
-        },
-        { 
-            "site_name":"Harrisburg University of Science and Technology",
-            "coordinates": {
-                "latitude": 40.26214, 
-                "longitude": -76.88021
-            },
-            
-            "description":  "",
-            "hint": "",
-            "next": "Finished"
-
+            "description":  "You walk your dog home, grabbing it by the collar, because you didn't have time to grab a leash before you chased after your dog.  The walk home is uneventful, except you are mad at your dog.  Eventually you get to your front gate.  The dog walks in, and it is wagging its tail.  You may be mad, but your dog is not.",
+            "hint": "This should not display."
         }
     ]
 }
