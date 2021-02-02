@@ -7,8 +7,8 @@
                 "longitude": -84.32073
             },
                         
-            "description":  "You were on your way to get the mail and went out to the mailbox.  As you were opening your mail, you notice a piece of mail that told you to meet them at Immaculate Heart of Mary Church.",
-            "hint": "If you're reading this, go to the end of the Immaculate Heart of Mary Church"
+            "description":  "You were on your way to get the mail and went out to the mailbox.  As you were opening your mail, you notice a piece of mail from \"Mason Smith\" that told you to meet them at Immaculate Heart of Mary Church.",
+            "hint": "If you're reading this, go to the Immaculate Heart of Mary Church"
         },
         { 
             "site_name": "Immaculate Heart of Mary Church",
@@ -17,27 +17,27 @@
                 "longitude": -84.32073
             },
             
-            "description":  "You saw your dog run towards the southwest corner of the block.  You ran after it.  When it got to the end of the block, your dog just stopped, waiting for you to catch up and wagging its tail.  You scream, \"Do you think this is a game?!?!\"  Actually, yes, your dog thinks it's a game.  Then you watch as you start to catch up to the southwest corner of your block as it starts running across the street again!",
-            "hint": "Go east!"
+            "description":  "You're in the parking lot of Immaculate Heart of Mary Church.  Up on the hill you see a building looming over you, but you're looking around trying to figure out what's next.  You go up to the bottom level and notice a note taped to the door.  You read the note.",
+            "hint": "I went to Bombay."
         },
         { 
-            "site_name": "Southeast Corner of the Block",
+            "site_name": "Cafe Bombay",
             "coordinates": {
-                "latitude": 39.35515,
-                "longitude": -76.55192
+                "latitude": 33.82860,
+                "longitude": -84.32723
             },
             
-            "description":  "As you were about to catch up to your dog, it took off and started running up the street.  You're still running, but for some reason, your dog is in better shape than your are.  Stupid dog.  Anyway, you see your dog start running north.  Where do you go?",
-            "hint": "Go to the north"
+            "description":  "You figured out that Mason didn't mean Bombay, India.  On one hand, it's not called that anymore (It's Mumbai).  On the other hand, you're familiar enough with the neighborhood that Cafe Bombay was down the street, and you figured to check there first before buying a plane ticket.  One of the waiters walks out to you and hands you a note.",
+            "hint": "There's a target on my back."
         },
         { 
-            "site_name": "Northeast Corner of the Block",
+            "site_name": "Target",
             "coordinates": {
-                "latitude": 39.35790, 
-                "longitude": -76.54951
+                "latitude": 33.82862, 
+                "longitude": -84.32586
             },
             
-            "description":  "Your dog stopped again, this time at the northeast corner of the block.  This time, it got far ahead of you, and, as if taunting you, it took time out of its day to poop.  So, it pooped, and you're still running.  As you start to get a whiff of the stench that it left behind, it takes off again, this time heading west.",
+            "description":  "You think, \"Ok.  I get it.  Mason is in trouble.\"  You are also wondering if his clues weren't a little obvious.  I mean, there was literally a Target at your back.  At Target, you notice a shopping cart that was suspiciously unattended.  In the child's seat, there is a crumpled up note.",
             "hint": "Your dog went west"
         },
         { 
