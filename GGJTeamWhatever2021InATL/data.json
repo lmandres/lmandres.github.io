@@ -51,14 +51,34 @@
             "hint": "Einstein"
         },
         { 
-            "site_name": "Home",
+            "site_name": "Einstein Bros. Bagels",
             "coordinates": {
-                "latitude": 39.35757, 
-                "longitude": -76.55412
+                "latitude": 33.82926, 
+                "longitude": -84.33172
             },
             
-            "description":  "You walk your dog home, grabbing it by the collar, because you didn't have time to grab a leash before you chased after your dog.  The walk home is uneventful, except you are mad at your dog.  Eventually you get to your front gate.  The dog walks in, and it is wagging its tail.  You may be mad, but your dog is not.",
-            "hint": "This should not display."
-        }
+            "description":  "You get to Einstein Bros. Bagels.  You don't want another coffee, but you get one anyway.  Mason sends his apologies to your spouse (for those of you with spouses) for sending you to all these coffee places and eateries.  He didn't want you driving all over town.  You notice a napkin in the holder with a note on it.",
+            "hint": "I bumped your Fender and needed to get it repaired."
+        },
+        { 
+            "site_name": "Guitar Center",
+            "coordinates": {
+                "latitude": 33.83320, 
+                "longitude": -84.33178
+            },
+            
+            "description":  "The moment you get to Guitar Center, you go up to someone to ask if Mason was there.  They said, \"No, but he said someone would be by.\"  Right then, he grabbed \"Love Shack\" by the B-52s and started playing the record.  When it get's to about 4 minutes in, everyone screams . . .",
+            "hint": "YOU'RE WHAT?!?!"
+        },
+        { 
+            "site_name": "Tin Roof Cantina",
+            "coordinates": {
+                "latitude": 33.82817, 
+                "longitude": -84.32778
+            },
+            
+            "description":  "You figure out the Love Shack lyrics and head over to Tin Roof Cantina.  Right then, someone walks out to you, and says \"Hi I'm Mason.\"  He explained that he was participating in a project at https://globalgamejam.org/, and this year's theme was \"Lost and Found.\"  He then said, \"Well . . . you found me.\"  Right then he hands you a beer and says, \"Drink up!\"",
+            "hint": "The End"
+        },
     ]
 }
