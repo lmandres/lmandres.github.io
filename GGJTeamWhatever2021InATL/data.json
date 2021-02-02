@@ -1,20 +1,20 @@
 {
     "sites": [
         { 
-            "site_name": "Outside of Fence",
+            "site_name": "At the Mailbox",
             "coordinates": {
-                "latitude": 39.35757,
-                "longitude": -76.55412
+                "latitude": 33.83319,
+                "longitude": -84.32073
             },
                         
-            "description":  "You were on your way to get the mail and went out to the mailbox.  As you were opening your mail, you noticed that your dog got out of the fence.  This is terrible!!!  You scream, \"I don't want to lose my dog!\"  You then run off after it.  Where though?",
-            "hint": "If you're reading this, go to the end of the block"
+            "description":  "You were on your way to get the mail and went out to the mailbox.  As you were opening your mail, you notice a piece of mail that told you to meet them at Immaculate Heart of Mary Church.",
+            "hint": "If you're reading this, go to the end of the Immaculate Heart of Mary Church"
         },
         { 
-            "site_name": "Southwest Corner of the Block",
+            "site_name": "Immaculate Heart of Mary Church",
             "coordinates": {
-                "latitude": 39.35542,
-                "longitude": -76.55291
+                "latitude": 33.83319,
+                "longitude": -84.32073
             },
             
             "description":  "You saw your dog run towards the southwest corner of the block.  You ran after it.  When it got to the end of the block, your dog just stopped, waiting for you to catch up and wagging its tail.  You scream, \"Do you think this is a game?!?!\"  Actually, yes, your dog thinks it's a game.  Then you watch as you start to catch up to the southwest corner of your block as it starts running across the street again!",
