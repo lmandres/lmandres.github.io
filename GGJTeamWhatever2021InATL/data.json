@@ -38,17 +38,17 @@
             },
             
             "description":  "You think, \"Ok.  I get it.  Mason is in trouble.\"  You are also wondering if his clues weren't a little obvious.  I mean, there was literally a Target at your back.  At Target, you notice a shopping cart that was suspiciously unattended.  In the child's seat, there is a crumpled up note.",
-            "hint": "Your dog went west"
+            "hint": "You're doing well.  You're a super Star."
         },
         { 
-            "site_name": "Northwest Corner of the Block",
+            "site_name": "Starbucks",
             "coordinates": {
-                "latitude": 39.35849,
-                "longitude": -76.55054 
+                "latitude": 33.82745,
+                "longitude": -84.33120 
             },
             
-            "description":  "As your dog gets to the northwest corner of the block, you see your neighbor grab it by the collar.  Somewhat relieved, you rush over to take your dog from your neighbor.  You thank your neighbor profusely.  They even offer to pick up the poop that your dog left behind as you were chasing it.  You decide that your neighbor is overly nice, but whatever.  But, where do you go from here?",
-            "hint": "Take your dog home, dummy"
+            "description":  "You get to Starbucks and think, \"Mason can't be in that much trouble.  He's leading me around the corner.\"  Don't worry, Mason's not in trouble.  He's just having a little fun.  Without anything pressing, you sit down to have a cup of coffee care or corporate America.  The barista hands you a cup, but you notice that it's not your name.",
+            "hint": "Einstein"
         },
         { 
             "site_name": "Home",
