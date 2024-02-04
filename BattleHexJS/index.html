@@ -106,7 +106,7 @@
                 if (playerIn == player) {
             
                     if (
-                        document.getElementById(card).src != "cardstux/back.svg" &&
+                        document.getElementById(card).src != cardset + "/back.svg" &&
                         (
                             playerFlipCard == null ||
                             playerPlayCard != null ||
@@ -233,15 +233,15 @@
 
         function showMoves() {
 
+            let playerMove = getPlayerRowColumn(playerFlipCard, playerPlayCard);
+            let computerMove = getPlayerRowColumn(computerFlipCard, computerPlayCard);
+
             if (
                 playerFlipCard != null &&
                 playerPlayCard != null &&
                 computerFlipCard != null &&
                 computerPlayCard != null
             ) {
-
-                let playerMove = getPlayerRowColumn(playerFlipCard, playerPlayCard);
-                let computerMove = getPlayerRowColumn(computerFlipCard, computerPlayCard);
 
                 document.getElementById("opponentFlipCardImg").src = cardset + "/" + computerSuits["b,r".split(",").indexOf(computerFlipCard.substr(0, 1))] + computerFlipCard.substr(1) + ".svg";
                 document.getElementById("opponentPlayCardImg").src = cardset + "/" + computerSuits["b,r".split(",").indexOf(computerPlayCard.substr(0, 1))] + computerPlayCard.substr(1) + ".svg";
@@ -311,8 +311,6 @@
                     playerPlayCard != null
                 ) {
 
-                    let playerMove = getPlayerRowColumn(playerFlipCard, playerPlayCard);
-
                     if (computerFlipCard.substr(0, 1) == "r") {
                         makeCardMove("r" + indexValues[playerMove["row"]-1], player);
                         makeCardMove("b" + indexValues[playerMove["column"]-1], player);
@@ -345,6 +343,72 @@
                         },
                         loaderTimeout
                     );
+                }
+            }
+
+            blankFullLines();
+        }
+
+        function blankFullLines() {
+
+            for (let lineIndex1 = 1; lineIndex1 <= indexValues.length; lineIndex1++) {
+
+                let lineHasMoves = false;
+                for (let lineIndex2 = 1; lineIndex2 <= indexValues.length; lineIndex2++) {
+                    if (gameBoard[lineIndex1][lineIndex2] == null) {
+                        lineHasMoves = true;
+                    }
+                }
+                if (!lineHasMoves) {
+                    document.getElementById("r"+indexValues[lineIndex1-1]).src = cardset + "/back.svg";
+                    document.getElementById("r"+indexValues[lineIndex1-1]).onclick = "";
+                }
+
+                lineHasMoves = false;
+                for (let lineIndex2 = 1; lineIndex2 <= indexValues.length; lineIndex2++) {
+                    if (gameBoard[lineIndex2][lineIndex1] == null) {
+                        lineHasMoves = true;
+                    }
+                }
+                if (!lineHasMoves) {
+                    document.getElementById("b"+indexValues[lineIndex1-1]).src = cardset + "/back.svg";
+                    document.getElementById("b"+indexValues[lineIndex1-1]).onclick = "";
+                }
+            }
+        }
+
+        function resetCardFaces() {
+
+            for (let cardIndex = 0; cardIndex < indexValues.length; cardIndex++) {
+
+                let lineHasMoves = false;
+                for (let lineIndex = 1; lineIndex <= indexValues.length; lineIndex++) {
+                    if (gameBoard[cardIndex+1][lineIndex] == null) {
+                        lineHasMoves = true;
+                    }
+                }
+
+                if (lineHasMoves) {
+                    document.getElementById("r"+indexValues[cardIndex]).src = cardset + "/" + playerSuits.join(",").substr("b,r".indexOf("r"),1)+indexValues[cardIndex]+".svg";
+                    document.getElementById("r"+indexValues[cardIndex]).setAttribute("onclick", "makeCardMove('r" + indexValues[cardIndex] + "', player);");
+                } else {
+                    document.getElementById("r"+indexValues[cardIndex]).src = cardset + "/back.svg";
+                    document.getElementById("r"+indexValues[cardIndex]).setAttribute("onclick", "");
+                }
+
+                lineHasMoves = false;
+                for (let lineIndex = 1; lineIndex <= indexValues.length; lineIndex++) {
+                    if (gameBoard[lineIndex][cardIndex+1] == null) {
+                        lineHasMoves = true;
+                    }
+                }
+
+                if (lineHasMoves) {
+                    document.getElementById("b"+indexValues[cardIndex]).src = cardset + "/" + playerSuits.join(",").substr("b,r".indexOf("b"),1)+indexValues[cardIndex]+".svg";
+                    document.getElementById("b"+indexValues[cardIndex]).setAttribute("onclick", "makeCardMove('b" + indexValues[cardIndex] + "', player);");
+                } else {
+                    document.getElementById("b"+indexValues[cardIndex]).src = cardset + "/back.svg";
+                    document.getElementById("b"+indexValues[cardIndex]).setAttribute("onclick", "");
                 }
             }
         }
@@ -666,15 +730,8 @@
                 }
                 
             } else {
-                
                 document.getElementById("playerPlayCardImg").src = document.getElementById(playerPlayCard).src;
-                
-                for (let cardIndex = 0; cardIndex < indexValues.length; cardIndex++) {
-                    document.getElementById(playerFlipCard.substr(0,1).toLowerCase()+indexValues[cardIndex]).src = cardset + "/" + playerSuits.join(",").substr("b,r".indexOf(playerFlipCard.substr(0,1).toLowerCase()),1)+indexValues[cardIndex]+".svg";
-                    document.getElementById(playerPlayCard.substr(0,1).toLowerCase()+indexValues[cardIndex]).src = cardset + "/" + playerSuits.join(",").substr("b,r".indexOf(playerPlayCard.substr(0,1).toLowerCase()),1)+indexValues[cardIndex]+".svg";
-                    document.getElementById("b"+indexValues[cardIndex]).setAttribute("onclick", "makeCardMove('b" + indexValues[cardIndex] + "', player);");
-                    document.getElementById("r"+indexValues[cardIndex]).setAttribute("onclick", "makeCardMove('r" + indexValues[cardIndex] + "', player);");
-                }
+                resetCardFaces();
             }
 
             if (playerFlipCard != null && playerPlayCard == null) {
@@ -828,6 +885,7 @@
                     voltageBoardIndexes[rowIndex].push(voltageIndex++);
                 }
             }
+            resetCardFaces();
 
             playerFlipCard = null;
             playerPlayCard = null;
@@ -862,7 +920,6 @@
             for (let setIndex = 0; setIndex < computerMoveSets.length; setIndex++) {
                 if (computerMoveSets[setIndex]) {
                     let currentProbability = testUsingMonteCarlo(playerIn, gameBoardIn, computerMoveSets[setIndex]["row"], computerMoveSets[setIndex]["column"]);
-                    console.log(setIndex, computerMoveSets[setIndex]["row"], computerMoveSets[setIndex]["column"], currentProbability);
                     if (currentProbability > maxProbability) {
                         maxProbability = currentProbability;
                         maxIndex = setIndex;
